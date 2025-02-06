@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Shopping Cart - SHOP.CO</title>
+    
+       
+</head>
+<body>
+    <nav>
+        <div class="nav-content">
+            <div class="nav-left">
+                <a href="/" class="logo"><img src="./images/image_164.jpg" alt="logo"></img></a>
+                <div class="nav-links">
+                    <button>Shop</button>
+                    <button>On Sale</button>
+                    <button>New Arrivals</button>
+                    <button>Brands</button>
+                </div>
+            </div>
+            
+            <div class="nav-right">
+                <div class="search-container">
+                    <input
+                        type="text"
+                        placeholder="Search for products..."
+                        class="search-input"
+                    />
+                    <img src="./images/image_167.jpg"   alt="Search"
+                        class="search-icon"
+                    />
+                </div>
+                <div class="nav-icons">
+                    <img src="./images/cart.png"              alt="Cart"
+                    />
+                    <img src="./images/image_166.jpg"     alt="User"
+                    />
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="breadcrumb">
+        Home > Cart
+    </div>
+
+    <main class="main-content">
+        <h1 class="page-title">YOUR CART</h1>
+        
+        <div class="cart-grid">
+            <div class="cart-items" id="cartItems">
+                <!-- Cart items will be inserted here by JavaScript -->
+            </div>
+
+            <div class="order-summary">
+                <h2 class="summary-title">Order Summary</h2>
+                
+                <div class="summary-row">
+                    <span>Subtotal</span>
+                    <span id="subtotal">$0</span>
+                </div>
+                <div class="summary-row discount">
+                    <span>Discount (-20%)</span>
+                    <span id="discount">-$0</span>
+                </div>
+                <div class="summary-row">
+                    <span>Delivery Fee</span>
+                    <span>$15</span>
+                </div>
+                <div class="summary-row summary-total">
+                    <span>Total</span>
+                    <span id="total">$0</span>
+                </div>
+
+                <div class="promo-container">
+                    <input
+                        type="text"
+                        placeholder="Add promo code"
+                        class="promo-input"
+                    />
+                    <button class="promo-button">Apply</button>
+                </div>
+
+                <button class="checkout-button">Go to Checkout <img src="./images/image_160.jpg" alt="arrow" width="10spx"></img> </button>
+            </div>
+        </div>
+    </main>
+
+    
+<script src="./index.js"></script>
+</body>
+</html>
